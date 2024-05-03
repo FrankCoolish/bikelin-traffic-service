@@ -1,0 +1,20 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: traffic
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8090/auth/realms/BikeNavigator
+
+#Tomtom
+tomtom_api_key: RFs0LRYJqv1toGeuFAQmDEidmxNSEsaU
+
+#enable debug of spring application
+#logging.level.org.springframework.web: DEBUG
+
+
+#adds a log file
+#logging.file.name=logs/traffic.log
